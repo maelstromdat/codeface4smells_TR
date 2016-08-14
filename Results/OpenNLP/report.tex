@@ -1,0 +1,174 @@
+\documentclass{article}
+ \usepackage[landscape,a4paper,pdftex,top=5mm,bottom=5mm,left=5mm,right=5mm]{geometry}
+ \usepackage{graphicx}
+ \usepackage{calc}
+ \usepackage{lmodern}
+ \begin{document}
+ \setlength{\parindent}{0pt}
+ \begin{center}
+ \begin{Large}
+ \textbf{Socio-technical analysis result ( OpenNLP )}
+ \end{Large}% latex table generated in R 3.2.5 by xtable 1.8-2 package
+% Sun May 22 22:58:13 2016
+\begin{tabular}{rlrrrrrrrrrrrrrrrrrrrrrrrr}
+  \hline
+ & \rotatebox{90}{range.date} & \rotatebox{90}{devs} & \rotatebox{90}{ml.only.devs} & \rotatebox{90}{code.only.devs} & \rotatebox{90}{ml.code.devs} & \rotatebox{90}{perc.ml.only.devs} & \rotatebox{90}{perc.code.only.devs} & \rotatebox{90}{perc.ml.code.devs} & \rotatebox{90}{sponsored.devs} & \rotatebox{90}{ratio.sponsored} & \rotatebox{90}{sponsored.core.devs} & \rotatebox{90}{ratio.sponsored.core} & \rotatebox{90}{num.tz} & \rotatebox{90}{core.global.devs} & \rotatebox{90}{core.mail.devs} & \rotatebox{90}{core.code.devs} & \rotatebox{90}{org.silo} & \rotatebox{90}{prima.donnas} & \rotatebox{90}{radio.silence} & \rotatebox{90}{black.cloud} & \rotatebox{90}{missing.links} & \rotatebox{90}{st.congruence} & \rotatebox{90}{communicability} & \rotatebox{90}{global.turnover} & \rotatebox{90}{code.turnover} \\ 
+  \hline
+1 & 2013-06 -- 2013-09 & 9 & 7 & 2 & 0 & 0.7778 & 0.2222 & 0.0000 & 0 & 0.0000 & 0 & 0.0000 & 1 & 5 & 5 & 1 & 1 & 0 & 0 & 0 & 1 &     0 & 0.0000 & 0.0000 & 0.0000 \\ 
+  2 & 2013-09 -- 2013-12 & 14 & 11 & 2 & 1 & 0.7857 & 0.1429 & 0.0714 & 1 & 0.0714 & 1 & 0.3333 & 1 & 8 & 7 & 2 & 2 & 0 & 0 & 0 & 2 &     0 & 0.0000 & 0.4348 & 0.0000 \\ 
+  3 & 2013-12 -- 2014-02 & 13 & 10 & 2 & 1 & 0.7692 & 0.1538 & 0.0769 & 1 & 0.0769 & 1 & 0.3333 & 1 & 6 & 5 & 2 & 3 & 0 & 7 & 0 & 3 &     0 & 0.0000 & 0.5926 & 0.0000 \\ 
+  4 & 2014-02 -- 2014-05 & 16 & 10 & 3 & 3 & 0.6250 & 0.1875 & 0.1875 & 0 & 0.0000 & 0 & 0.0000 & 1 & 8 & 6 & 3 & 5 & 0 & 6 & 0 & 6 &     0 & 0.3056 & 0.4828 & 0.0000 \\ 
+  5 & 2014-05 -- 2014-08 & 13 & 10 & 2 & 1 & 0.7692 & 0.1538 & 0.0769 & 1 & 0.0769 & 0 & 0.0000 & 1 & 5 & 5 & 0 & 0 & 0 & 5 & 0 & 0 &     1 & 1.0000 & 0.6897 & 0.8889 \\ 
+  6 & 2014-08 -- 2014-11 & 15 & 12 & 2 & 1 & 0.8000 & 0.1333 & 0.0667 & 0 & 0.0000 & 0 & 0.0000 & 1 & 7 & 7 & 0 & 0 & 0 & 2 & 0 & 0 &     1 & 1.0000 & 0.6429 & 0.3333 \\ 
+  7 & 2014-11 -- 2015-01 & 17 & 14 & 2 & 1 & 0.8235 & 0.1176 & 0.0588 & 0 & 0.0000 & 0 & 0.0000 & 1 & 8 & 8 & 0 & 0 & 0 & 2 & 0 & 0 &     1 & 1.0000 & 0.5000 & 0.6667 \\ 
+  8 & 2015-01 -- 2015-05 & 19 & 15 & 2 & 2 & 0.7895 & 0.1053 & 0.1053 & 0 & 0.0000 & 0 & 0.0000 & 1 & 10 & 9 & 1 & 1 & 0 & 2 & 0 & 1 &     0 & 0.5000 & 0.5000 & 0.0000 \\ 
+  9 & 2015-05 -- 2015-08 & 13 & 10 & 2 & 1 & 0.7692 & 0.1538 & 0.0769 & 1 & 0.0769 & 0 & 0.0000 & 1 & 6 & 6 & 0 & 0 & 0 & 2 & 0 & 0 &     1 & 1.0000 & 0.5000 & 0.2857 \\ 
+  10 & 2015-08 -- 2015-11 & 12 & 9 & 2 & 1 & 0.7500 & 0.1667 & 0.0833 & 1 & 0.0833 & 0 & 0.0000 & 1 & 6 & 6 & 0 & 0 & 0 & 0 & 0 & 0 &     1 & 1.0000 & 0.4000 & 0.3333 \\ 
+  11 & 2015-11 -- 2016-02 & 9 & 6 & 2 & 1 & 0.6667 & 0.2222 & 0.1111 & 1 & 0.1111 & 0 & 0.0000 & 1 & 4 & 4 & 0 & 0 & 0 & 0 & 0 & 0 &     1 & 1.0000 & 0.5714 & 0.0000 \\ 
+  12 & 2016-02 -- 2016-05 & 18 & 15 & 1 & 2 & 0.8333 & 0.0556 & 0.1111 & 0 & 0.0000 & 0 & 0.0000 & 1 & 9 & 9 & 0 & 0 & 0 & 2 & 0 & 0 &     1 & 1.0000 & 0.1481 & 0.0000 \\ 
+   \hline
+\end{tabular}
+% latex table generated in R 3.2.5 by xtable 1.8-2 package
+% Sun May 22 22:58:13 2016
+\begin{tabular}{rrrrrrrrrrrrrrrrrrrrrr}
+  \hline
+ & \rotatebox{90}{core.global.turnover} & \rotatebox{90}{core.mail.turnover} & \rotatebox{90}{core.code.turnover} & \rotatebox{90}{ratio.smelly.quitters} & \rotatebox{90}{ratio.smelly.devs} & \rotatebox{90}{global.truck} & \rotatebox{90}{mail.truck} & \rotatebox{90}{code.truck} & \rotatebox{90}{closeness.centr} & \rotatebox{90}{betweenness.centr} & \rotatebox{90}{degree.centr} & \rotatebox{90}{global.mod} & \rotatebox{90}{mail.mod} & \rotatebox{90}{code.mod} & \rotatebox{90}{density} & \rotatebox{90}{mail.only.core.devs} & \rotatebox{90}{code.only.core.devs} & \rotatebox{90}{ml.code.core.devs} & \rotatebox{90}{ratio.mail.only.core} & \rotatebox{90}{ratio.code.only.core} & \rotatebox{90}{ratio.ml.code.core} \\ 
+  \hline
+1 & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.2222 & 0.4444 & 0.2857 & 0.5000 & 0.1477 & 0.2500 & 0.2222 & 0.2372 & 0.3140 & -0.5000 & 0.2778 & 5 & 1 & 0 & 0.8333 & 0.1667 & 0.0000 \\ 
+  2 & 0.4615 & 0.5000 & 0.0000 & 0.0000 & 0.2143 & 0.4286 & 0.4167 & 0.3333 & 0.1567 & 0.4389 & 0.3626 & 0.0380 & 0.1252 & -0.4967 & 0.1758 & 7 & 2 & 0 & 0.7778 & 0.2222 & 0.0000 \\ 
+  3 & 0.8571 & 0.8333 & 0.0000 & 0.0000 & 0.7692 & 0.5385 & 0.5455 & 0.3333 & 0.6115 & 0.5783 & 0.5064 & 0.0651 & 0.0017 & -0.4210 & 0.2436 & 5 & 2 & 0 & 0.7143 & 0.2857 & 0.0000 \\ 
+  4 & 0.5714 & 0.5455 & 0.4000 & 0.5714 & 0.6875 & 0.5000 & 0.5385 & 0.5000 & 0.6440 & 0.4097 & 0.5167 & 0.0663 & 0.1252 & -0.3494 & 0.2833 & 5 & 2 & 1 & 0.6250 & 0.2500 & 0.1250 \\ 
+  5 & 0.7692 & 0.5455 & 2.0000 & 0.6000 & 0.3846 & 0.6154 & 0.5455 & 1.0000 & 0.1031 & 0.2298 & 0.3910 & 0.1694 & 0.1694 & 0.0000 & 0.1923 & 5 & 0 & 0 & 1.0000 & 0.0000 & 0.0000 \\ 
+  6 & 0.5000 & 0.5000 & 0.0000 & 0.4444 & 0.1333 & 0.5333 & 0.4615 & 1.0000 & 0.1741 & 0.3528 & 0.5143 & 0.0914 & 0.0914 & 0.0000 & 0.2000 & 7 & 0 & 0 & 1.0000 & 0.0000 & 0.0000 \\ 
+  7 & 0.6667 & 0.6667 & 0.0000 & 0.1250 & 0.1176 & 0.5294 & 0.4667 & 1.0000 & 0.1361 & 0.2906 & 0.2941 & 0.3081 & 0.3081 & 0.0000 & 0.2059 & 8 & 0 & 0 & 1.0000 & 0.0000 & 0.0000 \\ 
+  8 & 0.4444 & 0.4706 & 0.0000 & 0.0000 & 0.2105 & 0.4737 & 0.4706 & 0.7500 & 0.2884 & 0.7037 & 0.5146 & 0.4453 & 0.4276 & -0.5000 & 0.1520 & 9 & 1 & 0 & 0.9000 & 0.1000 & 0.0000 \\ 
+  9 & 0.5000 & 0.4000 & 2.0000 & 0.1250 & 0.1538 & 0.5385 & 0.4545 & 1.0000 & 0.1049 & 0.2538 & 0.4487 & 0.1520 & 0.1520 & 0.0000 & 0.2179 & 6 & 0 & 0 & 1.0000 & 0.0000 & 0.0000 \\ 
+  10 & 0.3333 & 0.3333 & 0.0000 & 0.0000 & 0.0000 & 0.5000 & 0.4000 & 1.0000 & 0.0448 & 0.0545 & 0.1970 & 0.6311 & 0.6311 & 0.0000 & 0.1667 & 6 & 0 & 0 & 1.0000 & 0.0000 & 0.0000 \\ 
+  11 & 0.8000 & 0.8000 & 0.0000 & 0.0000 & 0.0000 & 0.5556 & 0.4286 & 1.0000 & 0.1841 & 0.3705 & 0.4028 & 0.1403 & 0.1403 & 0.0000 & 0.2222 & 4 & 0 & 0 & 1.0000 & 0.0000 & 0.0000 \\ 
+  12 & 0.3077 & 0.3077 & 0.0000 & 0.0000 & 0.1111 & 0.5000 & 0.4706 & 1.0000 & 0.1965 & 0.3443 & 0.3922 & 0.0750 & 0.0750 & 0.0000 & 0.2549 & 9 & 0 & 0 & 1.0000 & 0.0000 & 0.0000 \\ 
+   \hline
+\end{tabular}
+
+\newpage
+ \begin{Large}
+ \textbf{Community smells: Pearson's correlation ( OpenNLP )}
+ \end{Large}% latex table generated in R 3.2.5 by xtable 1.8-2 package
+% Sun May 22 22:58:13 2016
+\begin{tabular}{rrrrrrrrrrrrrrrrrrrrrrrrr}
+  \hline
+ & \rotatebox{90}{devs} & \rotatebox{90}{ml.only.devs} & \rotatebox{90}{code.only.devs} & \rotatebox{90}{ml.code.devs} & \rotatebox{90}{perc.ml.only.devs} & \rotatebox{90}{perc.code.only.devs} & \rotatebox{90}{perc.ml.code.devs} & \rotatebox{90}{sponsored.devs} & \rotatebox{90}{ratio.sponsored} & \rotatebox{90}{sponsored.core.devs} & \rotatebox{90}{ratio.sponsored.core} & \rotatebox{90}{num.tz} & \rotatebox{90}{core.global.devs} & \rotatebox{90}{core.mail.devs} & \rotatebox{90}{core.code.devs} & \rotatebox{90}{org.silo} & \rotatebox{90}{prima.donnas} & \rotatebox{90}{radio.silence} & \rotatebox{90}{black.cloud} & \rotatebox{90}{missing.links} & \rotatebox{90}{st.congruence} & \rotatebox{90}{communicability} & \rotatebox{90}{global.turnover} & \rotatebox{90}{code.turnover} \\ 
+  \hline
+org.silo & 0.13 & -0.10 & 0.67 & 0.53 & -0.56 & 0.24 & 0.51 & -0.11 & -0.16 & 0.44 & 0.44 & - & 0.22 & -0.14 & 0.97 & - & - & 0.59 & - & 1.00 & -0.77 & -0.73 & 0.04 & -0.48 \\ 
+  prima.donnas & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - \\ 
+  radio.silence & 0.28 & 0.14 & 0.35 & 0.45 & -0.22 & -0.11 & 0.42 & 0.00 & -0.07 & 0.22 & 0.22 & - & 0.08 & -0.13 & 0.46 & 0.59 & - & - & - & 0.59 & -0.24 & -0.20 & 0.33 & 0.08 \\ 
+  black.cloud & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - \\ 
+  missing.links & 0.14 & -0.10 & 0.70 & 0.58 & -0.60 & 0.25 & 0.56 & -0.14 & -0.18 & 0.36 & 0.36 & - & 0.23 & -0.14 & 0.95 & 1.00 & - & 0.59 & - & - & -0.73 & -0.67 & 0.03 & -0.46 \\ 
+   \hline
+\end{tabular}
+% latex table generated in R 3.2.5 by xtable 1.8-2 package
+% Sun May 22 22:58:13 2016
+\begin{tabular}{rrrrrrrrrrrrrrrrrrrrrr}
+  \hline
+ & \rotatebox{90}{core.global.turnover} & \rotatebox{90}{core.mail.turnover} & \rotatebox{90}{core.code.turnover} & \rotatebox{90}{ratio.smelly.quitters} & \rotatebox{90}{ratio.smelly.devs} & \rotatebox{90}{global.truck} & \rotatebox{90}{mail.truck} & \rotatebox{90}{code.truck} & \rotatebox{90}{closeness.centr} & \rotatebox{90}{betweenness.centr} & \rotatebox{90}{degree.centr} & \rotatebox{90}{global.mod} & \rotatebox{90}{mail.mod} & \rotatebox{90}{code.mod} & \rotatebox{90}{density} & \rotatebox{90}{mail.only.core.devs} & \rotatebox{90}{code.only.core.devs} & \rotatebox{90}{ml.code.core.devs} & \rotatebox{90}{ratio.mail.only.core} & \rotatebox{90}{ratio.code.only.core} & \rotatebox{90}{ratio.ml.code.core} \\ 
+  \hline
+org.silo & 0.19 & 0.28 & -0.18 & 0.24 & 0.83 & -0.30 & 0.34 & -0.80 & 0.89 & 0.45 & 0.41 & -0.36 & -0.30 & -0.66 & 0.45 & -0.27 & 0.90 & 0.79 & -0.97 & 0.89 & 0.79 \\ 
+  prima.donnas & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - \\ 
+  radio.silence & 0.51 & 0.36 & 0.27 & 0.52 & 0.89 & 0.47 & 0.84 & -0.28 & 0.76 & 0.35 & 0.61 & -0.38 & -0.48 & -0.12 & 0.34 & -0.21 & 0.39 & 0.48 & -0.49 & 0.43 & 0.48 \\ 
+  black.cloud & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - \\ 
+  missing.links & 0.17 & 0.24 & -0.16 & 0.30 & 0.81 & -0.27 & 0.35 & -0.75 & 0.88 & 0.41 & 0.41 & -0.35 & -0.29 & -0.61 & 0.47 & -0.28 & 0.86 & 0.85 & -0.95 & 0.85 & 0.85 \\ 
+   \hline
+\end{tabular}
+
+\newpage
+ \begin{Large}
+ \textbf{Community smells: Pearson's correlation - p-values ( OpenNLP )}
+ \end{Large}% latex table generated in R 3.2.5 by xtable 1.8-2 package
+% Sun May 22 22:58:13 2016
+\begin{tabular}{rrrrrrrrrrrrrrrrrrrrrrrrr}
+  \hline
+ & \rotatebox{90}{devs} & \rotatebox{90}{ml.only.devs} & \rotatebox{90}{code.only.devs} & \rotatebox{90}{ml.code.devs} & \rotatebox{90}{perc.ml.only.devs} & \rotatebox{90}{perc.code.only.devs} & \rotatebox{90}{perc.ml.code.devs} & \rotatebox{90}{sponsored.devs} & \rotatebox{90}{ratio.sponsored} & \rotatebox{90}{sponsored.core.devs} & \rotatebox{90}{ratio.sponsored.core} & \rotatebox{90}{num.tz} & \rotatebox{90}{core.global.devs} & \rotatebox{90}{core.mail.devs} & \rotatebox{90}{core.code.devs} & \rotatebox{90}{org.silo} & \rotatebox{90}{prima.donnas} & \rotatebox{90}{radio.silence} & \rotatebox{90}{black.cloud} & \rotatebox{90}{missing.links} & \rotatebox{90}{st.congruence} & \rotatebox{90}{communicability} & \rotatebox{90}{global.turnover} & \rotatebox{90}{code.turnover} \\ 
+  \hline
+org.silo & 0.70 & 0.76 & 0.02 & 0.08 & 0.06 & 0.45 & 0.09 & 0.74 & 0.62 & 0.15 & 0.15 & - & 0.49 & 0.66 & 0.00 & - & - & 0.04 & - & 0.00 & 0.00 & 0.01 & 0.90 & 0.13 \\ 
+  prima.donnas & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - \\ 
+  radio.silence & 0.37 & 0.66 & 0.26 & 0.14 & 0.48 & 0.74 & 0.17 & 1.00 & 0.83 & 0.48 & 0.48 & - & 0.81 & 0.68 & 0.13 & 0.04 & - & - & - & 0.04 & 0.45 & 0.54 & 0.31 & 0.81 \\ 
+  black.cloud & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - \\ 
+  missing.links & 0.66 & 0.76 & 0.01 & 0.05 & 0.04 & 0.44 & 0.06 & 0.66 & 0.57 & 0.25 & 0.25 & - & 0.48 & 0.68 & 0.00 & 0.00 & - & 0.04 & - & - & 0.01 & 0.02 & 0.93 & 0.16 \\ 
+   \hline
+\end{tabular}
+% latex table generated in R 3.2.5 by xtable 1.8-2 package
+% Sun May 22 22:58:13 2016
+\begin{tabular}{rrrrrrrrrrrrrrrrrrrrrr}
+  \hline
+ & \rotatebox{90}{core.global.turnover} & \rotatebox{90}{core.mail.turnover} & \rotatebox{90}{core.code.turnover} & \rotatebox{90}{ratio.smelly.quitters} & \rotatebox{90}{ratio.smelly.devs} & \rotatebox{90}{global.truck} & \rotatebox{90}{mail.truck} & \rotatebox{90}{code.truck} & \rotatebox{90}{closeness.centr} & \rotatebox{90}{betweenness.centr} & \rotatebox{90}{degree.centr} & \rotatebox{90}{global.mod} & \rotatebox{90}{mail.mod} & \rotatebox{90}{code.mod} & \rotatebox{90}{density} & \rotatebox{90}{mail.only.core.devs} & \rotatebox{90}{code.only.core.devs} & \rotatebox{90}{ml.code.core.devs} & \rotatebox{90}{ratio.mail.only.core} & \rotatebox{90}{ratio.code.only.core} & \rotatebox{90}{ratio.ml.code.core} \\ 
+  \hline
+org.silo & 0.58 & 0.41 & 0.60 & 0.47 & 0.00 & 0.34 & 0.28 & 0.00 & 0.00 & 0.14 & 0.19 & 0.25 & 0.34 & 0.02 & 0.14 & 0.39 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
+  prima.donnas & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - \\ 
+  radio.silence & 0.11 & 0.28 & 0.43 & 0.10 & 0.00 & 0.13 & 0.00 & 0.38 & 0.00 & 0.27 & 0.04 & 0.23 & 0.12 & 0.71 & 0.29 & 0.51 & 0.20 & 0.12 & 0.10 & 0.16 & 0.12 \\ 
+  black.cloud & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - \\ 
+  missing.links & 0.63 & 0.47 & 0.65 & 0.38 & 0.00 & 0.39 & 0.26 & 0.01 & 0.00 & 0.19 & 0.19 & 0.26 & 0.36 & 0.04 & 0.12 & 0.38 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\ 
+   \hline
+\end{tabular}
+
+\newpage
+ \begin{Large}
+ \textbf{Community smells: Spearman's correlation ( OpenNLP )}
+ \end{Large}% latex table generated in R 3.2.5 by xtable 1.8-2 package
+% Sun May 22 22:58:13 2016
+\begin{tabular}{rrrrrrrrrrrrrrrrrrrrrrrrr}
+  \hline
+ & \rotatebox{90}{devs} & \rotatebox{90}{ml.only.devs} & \rotatebox{90}{code.only.devs} & \rotatebox{90}{ml.code.devs} & \rotatebox{90}{perc.ml.only.devs} & \rotatebox{90}{perc.code.only.devs} & \rotatebox{90}{perc.ml.code.devs} & \rotatebox{90}{sponsored.devs} & \rotatebox{90}{ratio.sponsored} & \rotatebox{90}{sponsored.core.devs} & \rotatebox{90}{ratio.sponsored.core} & \rotatebox{90}{num.tz} & \rotatebox{90}{core.global.devs} & \rotatebox{90}{core.mail.devs} & \rotatebox{90}{core.code.devs} & \rotatebox{90}{org.silo} & \rotatebox{90}{prima.donnas} & \rotatebox{90}{radio.silence} & \rotatebox{90}{black.cloud} & \rotatebox{90}{missing.links} & \rotatebox{90}{st.congruence} & \rotatebox{90}{communicability} & \rotatebox{90}{global.turnover} & \rotatebox{90}{code.turnover} \\ 
+  \hline
+org.silo & 0.12 & -0.03 & 0.53 & 0.23 & -0.25 & 0.20 & 0.09 & -0.11 & -0.26 & 0.58 & 0.58 & - & 0.25 & -0.08 & 1.00 & - & - & 0.29 & - & 1.00 & -0.96 & -0.93 & -0.12 & -0.63 \\ 
+  prima.donnas & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - \\ 
+  radio.silence & 0.42 & 0.32 & 0.25 & 0.46 & -0.05 & -0.23 & 0.22 & -0.13 & -0.20 & 0.10 & 0.10 & - & 0.22 & 0.03 & 0.25 & 0.29 & - & - & - & 0.29 & -0.13 & -0.06 & 0.41 & 0.03 \\ 
+  black.cloud & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - \\ 
+  missing.links & 0.12 & -0.03 & 0.53 & 0.23 & -0.25 & 0.20 & 0.09 & -0.11 & -0.26 & 0.58 & 0.58 & - & 0.25 & -0.08 & 1.00 & 1.00 & - & 0.29 & - & - & -0.96 & -0.93 & -0.12 & -0.63 \\ 
+   \hline
+\end{tabular}
+% latex table generated in R 3.2.5 by xtable 1.8-2 package
+% Sun May 22 22:58:13 2016
+\begin{tabular}{rrrrrrrrrrrrrrrrrrrrrr}
+  \hline
+ & \rotatebox{90}{core.global.turnover} & \rotatebox{90}{core.mail.turnover} & \rotatebox{90}{core.code.turnover} & \rotatebox{90}{ratio.smelly.quitters} & \rotatebox{90}{ratio.smelly.devs} & \rotatebox{90}{global.truck} & \rotatebox{90}{mail.truck} & \rotatebox{90}{code.truck} & \rotatebox{90}{closeness.centr} & \rotatebox{90}{betweenness.centr} & \rotatebox{90}{degree.centr} & \rotatebox{90}{global.mod} & \rotatebox{90}{mail.mod} & \rotatebox{90}{code.mod} & \rotatebox{90}{density} & \rotatebox{90}{mail.only.core.devs} & \rotatebox{90}{code.only.core.devs} & \rotatebox{90}{ml.code.core.devs} & \rotatebox{90}{ratio.mail.only.core} & \rotatebox{90}{ratio.code.only.core} & \rotatebox{90}{ratio.ml.code.core} \\ 
+  \hline
+org.silo & 0.16 & 0.32 & -0.02 & -0.11 & 0.76 & -0.47 & 0.21 & -0.96 & 0.64 & 0.64 & 0.36 & -0.48 & -0.24 & -0.83 & 0.28 & -0.19 & 0.99 & 0.54 & -1.00 & 0.99 & 0.54 \\ 
+  prima.donnas & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - \\ 
+  radio.silence & 0.44 & 0.36 & 0.44 & 0.51 & 0.61 & 0.43 & 0.93 & -0.13 & 0.43 & 0.27 & 0.62 & -0.30 & -0.45 & 0.04 & 0.27 & -0.05 & 0.22 & 0.42 & -0.27 & 0.28 & 0.42 \\ 
+  black.cloud & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - \\ 
+  missing.links & 0.16 & 0.32 & -0.02 & -0.11 & 0.76 & -0.47 & 0.21 & -0.96 & 0.64 & 0.64 & 0.36 & -0.48 & -0.24 & -0.83 & 0.28 & -0.19 & 0.99 & 0.54 & -1.00 & 0.99 & 0.54 \\ 
+   \hline
+\end{tabular}
+
+\newpage
+ \begin{Large}
+ \textbf{Community smells: Spearman's correlation - p-values ( OpenNLP )}
+ \end{Large}% latex table generated in R 3.2.5 by xtable 1.8-2 package
+% Sun May 22 22:58:13 2016
+\begin{tabular}{rrrrrrrrrrrrrrrrrrrrrrrrr}
+  \hline
+ & \rotatebox{90}{devs} & \rotatebox{90}{ml.only.devs} & \rotatebox{90}{code.only.devs} & \rotatebox{90}{ml.code.devs} & \rotatebox{90}{perc.ml.only.devs} & \rotatebox{90}{perc.code.only.devs} & \rotatebox{90}{perc.ml.code.devs} & \rotatebox{90}{sponsored.devs} & \rotatebox{90}{ratio.sponsored} & \rotatebox{90}{sponsored.core.devs} & \rotatebox{90}{ratio.sponsored.core} & \rotatebox{90}{num.tz} & \rotatebox{90}{core.global.devs} & \rotatebox{90}{core.mail.devs} & \rotatebox{90}{core.code.devs} & \rotatebox{90}{org.silo} & \rotatebox{90}{prima.donnas} & \rotatebox{90}{radio.silence} & \rotatebox{90}{black.cloud} & \rotatebox{90}{missing.links} & \rotatebox{90}{st.congruence} & \rotatebox{90}{communicability} & \rotatebox{90}{global.turnover} & \rotatebox{90}{code.turnover} \\ 
+  \hline
+org.silo & 0.72 & 0.93 & 0.08 & 0.48 & 0.43 & 0.54 & 0.77 & 0.74 & 0.42 & 0.05 & 0.05 & - & 0.44 & 0.81 & 0.00 & - & - & 0.37 & - & 0.00 & 0.00 & 0.00 & 0.73 & 0.04 \\ 
+  prima.donnas & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - \\ 
+  radio.silence & 0.17 & 0.32 & 0.43 & 0.13 & 0.87 & 0.46 & 0.50 & 0.69 & 0.52 & 0.75 & 0.75 & - & 0.50 & 0.93 & 0.44 & 0.37 & - & - & - & 0.37 & 0.69 & 0.86 & 0.21 & 0.94 \\ 
+  black.cloud & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - \\ 
+  missing.links & 0.72 & 0.93 & 0.08 & 0.48 & 0.43 & 0.54 & 0.77 & 0.74 & 0.42 & 0.05 & 0.05 & - & 0.44 & 0.81 & 0.00 & 0.00 & - & 0.37 & - & - & 0.00 & 0.00 & 0.73 & 0.04 \\ 
+   \hline
+\end{tabular}
+% latex table generated in R 3.2.5 by xtable 1.8-2 package
+% Sun May 22 22:58:13 2016
+\begin{tabular}{rrrrrrrrrrrrrrrrrrrrrr}
+  \hline
+ & \rotatebox{90}{core.global.turnover} & \rotatebox{90}{core.mail.turnover} & \rotatebox{90}{core.code.turnover} & \rotatebox{90}{ratio.smelly.quitters} & \rotatebox{90}{ratio.smelly.devs} & \rotatebox{90}{global.truck} & \rotatebox{90}{mail.truck} & \rotatebox{90}{code.truck} & \rotatebox{90}{closeness.centr} & \rotatebox{90}{betweenness.centr} & \rotatebox{90}{degree.centr} & \rotatebox{90}{global.mod} & \rotatebox{90}{mail.mod} & \rotatebox{90}{code.mod} & \rotatebox{90}{density} & \rotatebox{90}{mail.only.core.devs} & \rotatebox{90}{code.only.core.devs} & \rotatebox{90}{ml.code.core.devs} & \rotatebox{90}{ratio.mail.only.core} & \rotatebox{90}{ratio.code.only.core} & \rotatebox{90}{ratio.ml.code.core} \\ 
+  \hline
+org.silo & 0.64 & 0.34 & 0.95 & 0.75 & 0.00 & 0.12 & 0.52 & 0.00 & 0.03 & 0.03 & 0.25 & 0.12 & 0.45 & 0.00 & 0.38 & 0.55 & 0.00 & 0.07 & 0.00 & 0.00 & 0.07 \\ 
+  prima.donnas & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - \\ 
+  radio.silence & 0.17 & 0.27 & 0.17 & 0.11 & 0.03 & 0.17 & 0.00 & 0.68 & 0.16 & 0.39 & 0.03 & 0.34 & 0.15 & 0.90 & 0.40 & 0.87 & 0.49 & 0.18 & 0.40 & 0.39 & 0.18 \\ 
+  black.cloud & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - \\ 
+  missing.links & 0.64 & 0.34 & 0.95 & 0.75 & 0.00 & 0.12 & 0.52 & 0.00 & 0.03 & 0.03 & 0.25 & 0.12 & 0.45 & 0.00 & 0.38 & 0.55 & 0.00 & 0.07 & 0.00 & 0.00 & 0.07 \\ 
+   \hline
+\end{tabular}
+
+\end{center}
+ \end{document}
+ \grid
