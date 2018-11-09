@@ -1,6 +1,6 @@
 suppressPackageStartupMessages(library(xtable))
 suppressPackageStartupMessages(library(xlsx))
-
+setwd("/Users/Bellerofonte/codeface4smells_TR/Results/")
 projects <- list.dirs(path = ".", full.names = FALSE, recursive = FALSE)
 
 num.smells <- matrix(0, nrow=3, ncol=6)

@@ -1,6 +1,6 @@
 
 library(ggplot2)
-
+setwd("/Users/Bellerofonte/codeface4smells_TR/Results/")
 projects <- list.dirs(path = ".", full.names = FALSE, recursive = FALSE)
 
 

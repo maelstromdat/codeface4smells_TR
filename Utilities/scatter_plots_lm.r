@@ -1,6 +1,6 @@
 
 library(ggplot2)
-
+setwd("/Users/Bellerofonte/codeface4smells_TR/Results/")
 
 ggplotRegression <- function (fit) {
   
@@ -10,7 +10,7 @@ ggplotRegression <- function (fit) {
     labs(title = paste("P-value =",signif(summary(fit)$coef[2,4], 5)))
 }
 
-projects <- list.dirs(path = "/Users/Bellerofonte/codeface4smells_TR/Results/.", full.names = FALSE, recursive = FALSE)
+projects <- list.dirs(path = ".", full.names = FALSE, recursive = FALSE)
 
 
 devs <- c()
@@ -424,4 +424,5 @@ p <- ggplotRegression(lm(radiosilence ~ mail.mod, data = dat[!dat$radiosilence  
   xlab("Communication DSN modularity") +
   xlim(0, 1)
 plot(p)
+
 
