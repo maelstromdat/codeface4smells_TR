@@ -25,12 +25,12 @@ ml.code.devs <- c()
 
 
 for (prj in projects) {
-  repo <- read.csv(paste(prj, "report.csv", sep="/"))
+  repo <- read.csv(paste(prj, "new-report.csv", sep="/"))
 
   
-  orgsilos <- c(orgsilos, repo$org.silo)
-  missinglinks <- c(missinglinks, repo$missing.links)
-  radiosilence <- c(radiosilence, repo$radio.silence)
+  orgsilos <- c(orgsilos, repo$norm.org.silo)
+  missinglinks <- c(missinglinks, repo$norm.missing.links)
+  radiosilence <- c(radiosilence, repo$norm.radio.silence)
   
   devs <- c(devs, repo$devs)
   ml.code.devs <- c(ml.code.devs, repo$ml.code.devs)
